@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".data.fragmentMain.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/iconLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_left_3"
+            android:paddingStart="15dp"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SnackSnap"
+            android:layout_weight="10"
+            android:fontFamily="@font/irishgrover_regular"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/iconCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_cart"
+            android:paddingEnd="15dp"
+            />
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:tabBackground="@color/white"
+        app:tabTextColor="#9A9A9D"
+        android:fontFamily="@font/inter_font"
+        app:tabSelectedTextColor="#F9AE6A"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorColor="#F9AE6A"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
